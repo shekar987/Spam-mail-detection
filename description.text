@@ -1,0 +1,34 @@
+Code provides:
+
+--- Data Loading and Preprocessing:
+Imports necessary libraries including NumPy, pandas, and scikit-learn modules.
+Reads email data from a CSV file into a pandas DataFrame (raw_mail_data).
+Replaces null values in the DataFrame with empty strings.
+
+---Labeling and Data Separation:
+Labels spam emails as 0 and ham (non-spam) emails as 1.
+Separates the data into features (X, representing the 'Message' column) and labels (Y, representing the 'Category' column).
+
+---Train-Test Split:
+Splits the data into training and testing sets using the train_test_split function from scikit-learn.
+
+---Text Vectorization:
+Utilizes TF-IDF (Term Frequency-Inverse Document Frequency) vectorization to convert text data into feature vectors.
+Transforms the training and test text data into numerical feature representations.
+
+---Logistic Regression Model:
+Initializes a Logistic Regression model.
+Trains the model using the training features (X_train_features) and labels (Y_train).
+
+---Model Evaluation:
+Predicts labels for both the training and test datasets.
+Calculates and prints the accuracy of the model on both the training and test data.
+
+---Prediction on New Input:
+Takes a new email input for prediction.
+Converts the input text into feature vectors using the TF-IDF vectorizer.
+Uses the trained Logistic Regression model to predict whether the input email is spam or ham.
+Prints the prediction result.
+
+Overall, the code demonstrates a basic email spam classification workflow using logistic regression and TF-IDF vectorization.
+It involves data loading, preprocessing, model training, evaluation, and making predictions on new input data.
